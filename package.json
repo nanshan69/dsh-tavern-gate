@@ -1,0 +1,18 @@
+{
+  "name": "dsh-tavern-gate",
+  "version": "0.1.0",
+  "description": "DSHM 酒馆开关（最小版）",
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "client": {
+      "platform": "web",
+      "inject": []
+    }
+  }
+}
