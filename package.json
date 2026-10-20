@@ -1,7 +1,7 @@
 {
   "name": "dsh-tavern-gate",
-  "version": "0.1.0",
-  "description": "DSHM 酒馆开关（最小版）",
+  "version": "0.1.1",
+  "description": "DSHM 酒馆开关（最小版）：bundle 型插件，安装后由 DSHM 登记为 profile 层",
   "type": "module",
   "main": "./index.js",
   "exports": {
@@ -10,6 +10,9 @@
     "./package.json": "./package.json"
   },
   "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
     "client": {
       "platform": "web",
       "inject": []
