@@ -1,7 +1,7 @@
 {
   "name": "dsh-tavern-gate",
-  "version": "0.2.0",
-  "description": "DSHM 酒馆开关：运行时加载/卸载酒馆本体，附带核心包解析钩子、会话补丁与技能同步",
+  "version": "0.3.0",
+  "description": "DSHM 酒馆开关：运行时加载/卸载酒馆本体，附带核心包解析钩子、会话补丁与 DSHM 环境说明技能",
   "license": "AGPL-3.0-or-later",
   "type": "module",
   "main": "./index.js",
