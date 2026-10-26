@@ -1,7 +1,7 @@
 {
   "name": "dsh-tavern-gate",
-  "version": "0.1.1",
-  "description": "DSHM 酒馆开关（最小版）：bundle 型插件，安装后由 DSHM 登记为 profile 层",
+  "version": "0.2.0",
+  "description": "DSHM 酒馆开关：运行时加载/卸载酒馆本体，附带核心包解析钩子、会话补丁与技能同步",
   "type": "module",
   "main": "./index.js",
   "exports": {
@@ -17,5 +17,14 @@
       "platform": "web",
       "inject": []
     }
-  }
+  },
+  "license": "AGPL-3.0-or-later",
+  "files": [
+    "index.js",
+    "client.js",
+    "skills-sync.js",
+    "tavern-host-entry.js",
+    "cordis.patch.yml",
+    "skills"
+  ]
 }

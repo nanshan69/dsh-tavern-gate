@@ -1,6 +1,5 @@
-# dsh-tavern-gate 的 bundle 层：只插入一个空 host 半边 + 左下角开关按钮。
-# 安装器看到 package.json 里的 dsh.bundle.patch 后，会把这份 patch 登记为
-# profile 层（持久），条目才会出现在「设置 → 插件」里。
+# dsh-tavern-gate 的 bundle 层：插入门这个条目。
+# 是否加载以 profile 的 dsh.profile.bundles 为准（插件页的 bundle 开关写的就是那里）。
 - insert:
     - id: tavern-gate
       name: dsh-tavern-gate
