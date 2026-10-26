@@ -2,12 +2,34 @@
   "name": "dsh-tavern-gate",
   "version": "0.2.0",
   "description": "DSHM 酒馆开关：运行时加载/卸载酒馆本体，附带核心包解析钩子、会话补丁与技能同步",
+  "license": "AGPL-3.0-or-later",
   "type": "module",
   "main": "./index.js",
   "exports": {
     ".": "./index.js",
     "./client": "./client.js",
+    "./tavern-host-entry": "./tavern-host-entry.js",
     "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "skills-sync.js",
+    "tavern-host-entry.js",
+    "cordis.patch.yml",
+    "package.json",
+    "README.md",
+    "skills"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "dshm",
+    "openharmony",
+    "tavern"
+  ],
+  "engines": {
+    "node": ">=22.19.0"
   },
   "dsh": {
     "bundle": {
@@ -18,13 +40,9 @@
       "inject": []
     }
   },
-  "license": "AGPL-3.0-or-later",
-  "files": [
-    "index.js",
-    "client.js",
-    "skills-sync.js",
-    "tavern-host-entry.js",
-    "cordis.patch.yml",
-    "skills"
-  ]
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nanshan69/dsh-tavern-harmony.git",
+    "directory": "packages/dsh-tavern-gate"
+  }
 }
